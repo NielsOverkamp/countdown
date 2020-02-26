@@ -8,6 +8,6 @@ window.onload = function() {
     const countdown = document.querySelector("#countdown");
     setInterval(function () {
         const duration = moment.duration(countdownTo.diff(moment()));
-        countdown.textContent = `${Math.floor(duration.asDays())} days ${duration.hours()} hours ${duration.seconds()} seconds`;
+        countdown.textContent = `${Math.floor(duration.asDays())} days ${duration.hours()} hours ${duration.minutes()} minutes ${duration.seconds()} seconds`;
     }, 1000)
 };
